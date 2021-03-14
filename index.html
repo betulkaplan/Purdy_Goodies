@@ -8,13 +8,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2a33474c8f.js" crossorigin="anonymous"></script>
-    <title>Expanding Cards</title>
+    <title>Purdy Goodies Order</title>
 </head>
 <body>
     <div class="container">
         <div class="panel active" style="background-image: url('https://images.unsplash.com/photo-1612198791362-c996ceb686b1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxhbGx8fHx8fHx8fHwxNjE1NjQyNTQx&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit');">
             <h3>Macarons</h3>
             <form action="result.html" method="GET" class="order-form">
+                <div class="question">
+                    <label for="flavour">Please choose the flavour</label>
+                    <select name="flavour" id="flavour">
+                        <option value="lavender">lavender</option>
+                        <option value="cherry">cherry</option>
+                        <option value="strawberry">strawberry</option>
+                        <option value="chocolate">chocolate</option>
+                        <option value="salted-caramel">salted-caramel</option>
+                    </select>
+                </div><hr>
+                <div class="question">
+                    <label for="number">How many pieces would you like?</label>
+                    <input type="number" name="amount" id="number">
+                </div><hr>
+                <div class="question">
+                    <input type="checkbox" id="gift-box" name="box" value="gift">
+                    <label for="gift-box">I want my order to be gift boxed. </label>
+                </div><hr>
                 <div class="question">
                     <label for="shipped">Delivery Method</label><br>
                     <input type="radio" name="delivery" id="shipped" value="ship">
@@ -29,7 +47,23 @@
         </div>
         <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1534768368122-aa9bbb3a8d62?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxhbGx8fHx8fHx8fHwxNjE1NjQyNjM3&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit');">
             <h3>Cupcakes</h3>
-            <form action="result.html" method="GET" class="order-form"> 
+            <form action="result.html" method="GET" class="order-form">
+                <div class="question">
+                    <label for="buttercream">Please choose the buttercream type</label>
+                    <select name="buttercream" id="buttercream">
+                        <option value="ermine">Ermine Frosting</option>
+                        <option value="french">French Custard</option>
+                        <option value="Swiss">Swiss Merinque Buttercream</option>
+                    </select>
+                </div><hr>
+                <div class="question">
+                    <label for="number">How many pieces would you like?</label>
+                    <input type="number" name="amount" id="number">
+                </div><hr>
+                <div class="question">
+                    <input type="checkbox" id="gift-box" name="box" value="gift">
+                    <label for="gift-box">I want my order to be gift boxed. </label>
+                </div><hr> 
                 <div class="question">
                     <label for="shipped">Delivery Method</label><br>
                     <input type="radio" name="delivery" id="shipped" value="ship">
@@ -44,6 +78,14 @@
             <h3>Cookies</h3>
             <form action="result.html" method="GET" class="order-form">
                 <div class="question">
+                    <label for="number">How many pieces would you like?</label>
+                    <input type="number" name="amount" id="number">
+                </div><hr>
+                <div class="question">
+                    <input type="checkbox" id="gift-box" name="box" value="gift">
+                    <label for="gift-box">I want my order to be gift boxed. </label>
+                </div><hr>
+                <div class="question">
                     <label for="shipped">Delivery Method</label><br>
                     <input type="radio" name="delivery" id="shipped" value="ship">
                     <label for="shipped">I want my order to be shipped to my address. </label><br>
@@ -56,6 +98,21 @@
         <div class="panel" style="background-image: url('https://images.unsplash.com/photo-1504674138570-5fe6671ec5ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxhbGx8fHx8fHx8fHwxNjE1NjQyOTA2&ixlib=rb-1.2.1&q=80&w=1080&utm_source=unsplash_source&utm_medium=referral&utm_campaign=api-credit');">
             <h3>Doughnuts</h3>
             <form action="result.html" method="GET" class="order-form"> 
+                <div class="question">
+                    <label for="donut-type">How do you want your doughnut?</label><br>
+                    <input type="radio" name="donut-type" id="glazed" value="glazed">
+                    <label for="glazed">Glazed</label><br>
+                    <input type="radio" name="donut-type" id="filled" value="filled">
+                    <label for="filled">Filled</label>  
+                </div><hr>
+                <div class="question">
+                    <label for="number">How many pieces would you like?</label>
+                    <input type="number" name="amount" id="number">
+                </div><hr>
+                <div class="question">
+                    <input type="checkbox" id="gift-box" name="box" value="gift">
+                    <label for="gift-box">I want my order to be gift boxed. </label>
+                </div><hr>
                 <div class="question">
                     <label for="shipped">Delivery Method</label><br>
                     <input type="radio" name="delivery" id="shipped" value="ship">
@@ -70,6 +127,14 @@
             <h3>Petit Fours</h3>
             <form action="result.html" method="GET" class="order-form">
                 <div class="question">
+                    <label for="number">How many pieces would you like?</label>
+                    <input type="number" name="amount" id="number">
+                </div><hr>
+                <div class="question">
+                    <input type="checkbox" id="gift-box" name="box" value="gift">
+                    <label for="gift-box">I want my order to be gift boxed. </label>
+                </div><hr>
+                <div class="question">
                     <label for="shipped">Delivery Method</label><br>
                     <input type="radio" name="delivery" id="shipped" value="ship">
                     <label for="shipped">I want my order to be shipped to my address. </label><br>
@@ -81,5 +146,10 @@
         </div>
     </div>
     <script src="script.js"></script>
+    <footer>
+        <div class="outer-footer">
+            Copyright &copy; Purdy Goodies. No Rights Reserved
+        </div>
+    </footer>
 </body>
 </html>
